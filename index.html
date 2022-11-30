@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Methods</title>
+    </head>
+    <body>
+        <script>
+            //concat Method..
+            let number1 = [1,2,3,4];
+            let number2 = [5,6,7,8];
+            let addNumbers = number1.concat(number2);
+            console.log(addNumbers);
+            //copyWithin Method..
+            let number3 = ["apple","mango","kiwi","orange"];
+            let addNumber3 = number3.copyWithin(1,3);
+            console.log(addNumber3);
+            //every Method...
+            let number4 = [12,14,20,24,35];
+            const everyMethod = () => {
+            let addNumber4 = number4.every((item) => item > 20);
+            console.log(addNumber4);
+            }
+            everyMethod();
+            //filter Method..
+            let number5 = [22,24,28,33,35];
+            const arrFilter = () => {
+            let addNumber5 = number5.filter((item) => item > 30);
+            console.log(addNumber5);
+            }
+            arrFilter();
+            //find Method..
+            let team = [
+                {name:"sandeep",age:22,},
+                {name:"anji",age:34},
+                {name:"abhi",age:7},
+                {name:"paramesh",age:35}
+            ]
+            let findAdult = team.find(({age}) => age > 25);
+            console.log(findAdult);
+            //findIndexof Method...
+            let fruits1 = ["apple","mango","Pineapple","orange","kiwi"];
+            const arrayIndex = () => {
+            let findFruits = fruits1.findIndex((fruit) => fruit === "mango");
+            console.log(findFruits);
+            }
+            arrayIndex();
+            //flat Method..
+            let number6 = [1,2,3,[4,5,6],[7,8,]];
+            const arrayFlat = () => {
+            let addFlat  = number6.flat(2);
+            console.log(addFlat);
+            }
+            arrayFlat();
+            //flatMap Method..
+            let number7 = [1,2,3,4,5];
+            const arrayFm = () => {
+            let addFm = number7.flatMap((item) => item *2);
+            console.log(addFm);
+            }
+            arrayFm();
+            //includes Method..
+            let books = ["maths","english","social","biology"];
+            const arrayInclude = () => {
+            let addInclude = books.includes("social");
+            console.log(addInclude);
+            }
+            arrayInclude();
+            //indexof Methods..
+            let names = ["lenovo","dell","hp","asus","apple",'hp'];
+            const aryIndex = () => {
+            let addIndex = names.indexOf("hp",3);
+            console.log(addIndex);
+            }
+            aryIndex();
+            //isArray Method..
+            let things = ["book","table","chair","cupboard"];
+            const arrayIs = () => {
+            let addThing = Array.isArray(things);
+            console.log(addThing);
+            }
+            arrayIs();
+            //join Method..
+            let names1 = ["mouse","Dairy","seasons","sheets"];
+            const arrayJoin = () => {
+            let addJoin = names1.join(" &# ");
+            console.log(addJoin);
+            }
+            arrayJoin();
+            //lastIndexOf method..
+            let names2 = ["java","python","C++","java","javascript","nordjs","java"];
+            const arrayindx = () => {
+            let addIdx = names2.lastIndexOf("java");
+            console.log(addIdx);
+            }
+            arrayindx();
+            //lenght method..
+            let method1 = ["microsoft","email","visulstudio","chrome"];
+            const arrayLength = () => {
+            let addMethod = method1.length;
+            console.log(addMethod);
+            }
+            arrayLength();
+            //map Method..
+            let items1 = [14,2,8,9,12];
+            const arrayMap = () => {
+            let addItem = items1.map((arg) => arg *5);
+            console.log(addItem);
+            }
+            arrayMap();
+            //pop Method..
+            let items2 = ["trees","rocks","air","fire","sky"];
+            const arrayPop = () => {
+            let addPop = items2.pop();
+            console.log(addPop);
+            }
+            arrayPop();
+            //push Method...
+            let items3 = ["kids","adults","old","younger"];
+            const arrayPush = () => {
+            let addPush = items3.push("born");
+            console.log(addPush);
+            }
+            arrayPush();
+            //reduce Method..
+            let number8 = [1,5,8,74,14];
+            const arrayReduce = () => {
+            let addreduce = number8.reduce((value,total) => value - total );
+            console.log(addreduce);
+            }
+            arrayReduce();
+
+            </script>
+    </body>
+</html>
