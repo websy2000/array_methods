@@ -128,6 +128,78 @@
             console.log(addreduce);
             }
             arrayReduce();
+            //reverse Method...
+            let names3 = ["sunny","anji","paramesh","srikanth","anil"];
+            let arrayReverse = () => {
+            let tryReverse = names3.reverse();
+            console.log(tryReverse);
+            }
+            arrayReverse();
+            //shift Method...
+            let names4 = ["school","collage","institute","university"];
+            const arrayShift = () => {
+            let removeShift = names4.shift();
+            console.log(removeShift);   
+            }
+            arrayShift();
+            //unShift Method...
+            let names5 = ["innova","crysta","volwesvagen","benz"];
+            const arrayUnshift = () => {
+            let addNames5 = names5.unshift("Buggati");
+            console.log(addNames5);    
+            }
+            arrayUnshift();
+            //slice Method..
+            let names6 = ["javascript","python","nordjava","react","angular","html"];
+            const arraySlice = () => {
+            let addNames6 = names6.slice(1,6);
+            console.log(addNames6);    
+            }
+            arraySlice();
+            //some method..
+            let number9 = [10,25,18,35,40];
+            let arraySome = () => {
+            let addNumber9 = number9.some((item) => item > 18);
+            console.log(addNumber9);
+            }
+            arraySome();
+            //sort Method..
+            let names7 = [14,8,4,33,78,1,2,11];
+            let arraySort = () => {
+            let addNames7 = names7.sort((a,b) => b-a )
+            console.log(addNames7);    
+            }
+            arraySort();
+            //splice Method..
+            let names8 = ["javascript","java","Python","nord","react"];
+            let arraySplice = () => {
+            let addNames8 = names8.splice(1,3,"sandeep","yadav","Angular") ;
+            console.log(addNames8);   
+            console.log(names8);
+            }
+            arraySplice();
+            //toLocalString Method..
+            let number10 = [14,25,36,78,20];
+            let arrayLocal = () => {
+            let addNumbers10 = number10.toLocaleString();
+            console.log(addNumbers10);    
+            }
+            arrayLocal();
+            //toString Method..
+            let logi = ["sandeep",22,"filmNagar"];
+            let arrayTostring = () => {
+            let addLogi = logi.toString();
+            console.log(addLogi);    
+            }
+            arrayTostring();
+            //Values Method...
+            let items4 = ["Apple","Ball","Cat","Dog","Lion"];
+            let addItem4 = items4.values();
+
+            for (let value of addItem4){
+                console.log(value);
+            }
+
 
             </script>
     </body>
